@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>快樂小鳥</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>快樂小鳥</h1>
+            <div class="score-container">
+                <span>分數: </span>
+                <span id="score">0</span>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="encouragement" class="hidden"></div>
+        <div id="startScreen" class="overlay">
+            <div class="start-content">
+                <h2>快樂小鳥</h2>
+                <p>點擊或按空格鍵讓小鳥飛翔，穿越障礙物獲得分數！</p>
+                <button id="startButton">開始遊戲</button>
+            </div>
+        </div>
+        <div id="gameOverScreen" class="overlay hidden">
+            <div class="gameover-content">
+                <h2>遊戲結束</h2>
+                <p>你的分數: <span id="finalScore">0</span></p>
+                <button id="restartButton">再玩一次</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
